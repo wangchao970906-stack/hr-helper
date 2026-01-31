@@ -1,20 +1,42 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# HR Helper
 
-# Run and deploy your AI Studio app
+HR Helper checks candidate qualifications and assists in recruitment processes.
 
-This contains everything you need to run your app locally.
+## Getting Started
 
-View your app in AI Studio: https://ai.studio/apps/drive/1yhxqZtp21Dy0f-pemeXWXwDypOGPAMFo
+### Prerequisites
+- Node.js (v20+ recommended)
+- NPM
 
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
+### Installation
 1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+   ```bash
+   npm install
+   ```
+
+### Development
+Start the development server:
+```bash
+npm run dev
+```
+
+### Build
+Build for production:
+```bash
+npm run build
+```
+
+## Deployment
+
+This project is configured to automatically deploy to GitHub Pages using GitHub Actions.
+
+### Setup
+1. Go to your repository **Settings**.
+2. Navigate to **Pages** (under Code and automation).
+3. Under **Build and deployment**, set **Source** to **GitHub Actions**.
+4. The deployment workflow (`.github/workflows/deploy.yml`) will automatically trigger on pushes to the `main` branch.
+
+## File Structure & GitIgnore
+
+- **Exclusions**: `node_modules`, `dist`, `.env` files, and system logs are excluded from the repository to ensure privacy and cleanliness.
+- **Privacy**: Ensure you do not commit any `.env` files containing API keys or secrets.
