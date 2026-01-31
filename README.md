@@ -40,3 +40,4 @@ This project is configured to automatically deploy to GitHub Pages using GitHub 
 
 - **Exclusions**: `node_modules`, `dist`, `.env` files, and system logs are excluded from the repository to ensure privacy and cleanliness.
 - **Privacy**: Ensure you do not commit any `.env` files containing API keys or secrets.
+
